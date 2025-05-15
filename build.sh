@@ -1,0 +1,1 @@
+python3 src/main.py "/home/hammy97/workspace/github/ryanhamilton-eccc/static-site-generator/"
