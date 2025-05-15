@@ -5,10 +5,10 @@ import shutil
 from copystatic import copy_files_recursive
 from gencontent import generate_pages_recursive
 
-dir_path_static = "static"
-dir_path_public = "docs"
-dir_path_content = "content"
-template_path = "template.html"
+dir_path_static = "./static"
+dir_path_public = "./docs"
+dir_path_content = "./content"
+template_path = "./template.html"
 
 
 def main():
@@ -28,11 +28,10 @@ def main():
 
     print("Generating page...")
     generate_pages_recursive(
-        os.path.join(basepath, dir_path_content),
-        os.path.join(basepath, template_path),
-        os.path.join(basepath, dir_path_public),
+        dir_path_content,
+        template_path,
+        dir_path_public,
         basepath=basepath
     )
-
 
 main()
